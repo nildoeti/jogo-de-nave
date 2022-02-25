@@ -8,3 +8,7 @@ h1 {
     font-family: face;
     font-size: 40px;
 }
+
+body {
+    background-image: url(../imgs/fundo.jpg);
+}
