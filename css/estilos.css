@@ -58,3 +58,12 @@ body {
     top: 464px;
     width: 44px;
 }
+
+#inimigo1 {
+    background-image: url(../imgs/inimigo1.png);
+    height: 66px;
+    left: 689px;
+    position: absolute;
+    top: 253px;
+    width: 256px;
+}
