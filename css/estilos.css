@@ -3,3 +3,8 @@
     src: url(../fontes/ANODETONOONE.TTF);
 }
 
+h1 {
+    color: #603A03;
+    font-family: face;
+    font-size: 40px;
+}
