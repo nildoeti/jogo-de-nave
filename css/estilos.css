@@ -31,3 +31,12 @@ body {
     text-align: center;
     width: 350px;
 }
+
+#fundoGame {
+    background-image: url(../imgs/fundo_game.jpg);
+    border-color: #fff;
+    border-style: solid;
+    height: 630px;
+    width: 950px;
+
+}
