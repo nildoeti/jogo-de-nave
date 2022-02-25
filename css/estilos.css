@@ -49,3 +49,12 @@ body {
     top: 179px;
     width: 256px;
 }
+
+#amigo {
+    background-image: url(../imgs/amigo.png);
+    height: 51px;
+    left: 10px;
+    position: absolute;
+    top: 464px;
+    width: 44px;
+}
