@@ -40,3 +40,12 @@ body {
     width: 950px;
 
 }
+
+#jogador {
+    background-image: url(../imgs/apache.png);
+    height: 66px;
+    left: 8px;
+    position: absolute;
+    top: 179px;
+    width: 256px;
+}
