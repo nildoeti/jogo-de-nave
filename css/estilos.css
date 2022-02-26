@@ -76,3 +76,10 @@ body {
     top: 447px;
     width: 165px;
 }
+
+/* Animação */
+.animal {
+    background-image: url(../imgs/);
+    animation:play .5s steps(2) infinite;
+}
+
