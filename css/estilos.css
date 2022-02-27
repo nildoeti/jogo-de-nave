@@ -99,3 +99,9 @@ body {
     from {background-position: 0px;}
     to {background-position: -512px;}
 }
+
+@-moz-keyframes play {
+    from {background-position: 0px;}
+    to {background-position: -512px;}
+}
+
