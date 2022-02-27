@@ -78,16 +78,16 @@ body {
 }
 
 /* Animação */
-.animal {
-    background-image: url(../imgs/);
-    animation:play .5s steps(2) infinite;
+.anima1 {
+  background-image: url(../imgs/apache.jpg);
+  animation: play .5s steps(2) infinite;
 
-    /*
-    -webkit-animation: play .5s step(2) infinite;
-    -moz-animation: play .5s step(2) infinite;
-    -ms-animation: play .5s steps(2) infinite;
-    -o-animation: play .5s steps(2) infinite;
-    */
+  /* propriedade para browser Chrome */
+  -webkit-animation: play .5s steps(2) infinite;
+  -moz-animation: play .5s steps(2) infinite;
+  -ms-zoom-animation: play .5s steps(2) infinite;
+  -o-animation: play .5s steps(2) infinite;
+
 }
 
 @keyframes play {
@@ -105,3 +105,8 @@ body {
     to {background-position: -512px;}
 }
 
+
+@-o-keyframes play {
+    from {background-position: 0px;}
+    to {background-position: -512px;}
+}
