@@ -147,3 +147,22 @@ body {
      to {background-position: -512px;}
  }
 
+@-webkit-keyframes play2 {
+    from {background-position: 0px;}
+    to {background-position: -512px;}
+}
+
+@-moz-keyframes play2 {
+    from {background-position: 0px;}
+    to {background-position: -512px;}
+}
+
+@-ms-keyframes play2 {
+    from {background-position: 0px;}
+    to {background-position: -512px;}
+}
+
+@-o-keyframes play2 {
+    from {background-position: 0px;}
+    to {background-position: -512px;}
+}
