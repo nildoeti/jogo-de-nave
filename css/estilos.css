@@ -142,4 +142,8 @@ body {
     -o-animation: play2 .9s steps(2) infinite;
 }
 
- 
+ @keyframes play2{
+     from {background-position: 0px;}
+     to {background-position: -512px;}
+ }
+
