@@ -82,7 +82,7 @@ body {
   background-image: url(../imgs/apache.jpg);
   animation: play .5s steps(2) infinite;
 
-  /* propriedade para browser Chrome */
+  /* resolvendo incompatibilidade com os browers */
   -webkit-animation: play .5s steps(2) infinite;
   -moz-animation: play .5s steps(2) infinite;
   -ms-zoom-animation: play .5s steps(2) infinite;
@@ -124,9 +124,22 @@ body {
     background-image: url(../imgs/inimigo1.png);
     animation: play .5s steps(2) infinite;
     
-    /* propriedade para browser Chrome */
+    /* resolvendo incompatibilidade com os browers */
     -webkit-animation: play .5s steps(2) infinite;
     -moz-animation: play .5s steps(2) infinite;
     -ms-animation: play .5s steps(2) infinite;
     -o-animation: play .5s steps(2) infinite;
 }
+
+.anima3 {
+    background-image: url(../imgs/amigo.png);
+    animation: play2 .9s steps(12) infinite; 
+
+    /* resolvendo incompatibilidade com os browers */
+    -webkit-animation: play2 .9s steps(2) infinite;
+    -moz-animation: play2 .9s steps(2) infinite;
+    -ms-animation: play2 .9s steps(2) infinite;
+    -o-animation: play2 .9s steps(2) infinite;
+}
+
+ 
