@@ -95,7 +95,7 @@ body {
     to {background-position: 512px;}
 }
 
-@-moz-keyframes play {
+@-webkit-keyframes play {
     from {background-position: 0px;}
     to {background-position: -512px;}
 }
@@ -105,8 +105,17 @@ body {
     to {background-position: -512px;}
 }
 
+@-moz-keyframes play {
+    from {background-image: 0px;}
+    to {background-image: -512px;}
+}
+
+@-ms-keyframes play {
+    from {background-image: 0px;}
+    to {background-image: -512px;}
+}
 
 @-o-keyframes play {
-    from {background-position: 0px;}
-    to {background-position: -512px;}
+    from {background-image: 0px;}
+    to {background-image: -512px;}
 }
