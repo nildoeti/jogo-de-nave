@@ -58,6 +58,12 @@ function start() { // início da função start
     if (jogo.pressionou[TECLA.W]) {
         var topo = parseInt($("#jogador").css("top"));
         $("#jogador").css("top",topo-10);
+
+        if (topo<=0) {
+        
+    $("#jogador").css("top",topo+10);
+}
+
     
     }
     
@@ -65,6 +71,12 @@ function start() { // início da função start
         
         var topo = parseInt($("#jogador").css("top"));
         $("#jogador").css("top",topo+10);   
+
+        if (topo>=434) {    
+    $("#jogador").css("top",topo-10);
+        
+}
+
     }
     
     if (jogo.pressionou[TECLA.D]) {
