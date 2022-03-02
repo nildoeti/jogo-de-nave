@@ -7,23 +7,33 @@ function start() { // início da função start
     $("#fundoGame").append("<div id='amigo' class='anima3'></div>");
 
     //Principais variáveis do jogo
-	var jogo = {}
-	
+	var jogo = {};
+
+    // definindo as teclas do jogo
+    var TECLA = {
+        W: 87,
+        S: 83,
+        D: 68
+    };
+
+    jogo.pressionou = [];
+
+
 	//Loop do jogo
 	jogo.timer = setInterval(loop,30);
-	
+
 	function loop() {
         movefundo();
-	
-	} // Fim da função loop()
+
+	} // Fim da função loop()  
 
 
     //Função que movimenta o fundo do jogo
-	
+
 	function movefundo() {
         esquerda = parseInt($("#fundoGame").css("background-position"));
 	    $("#fundoGame").css("background-position",esquerda-1);
-	
+
 	} // fim da função movefundo()
 
 } // fim da função start
