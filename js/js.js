@@ -29,17 +29,20 @@ function start() { // início da função start
     });
 
 
+
 	//Loop do jogo
 	jogo.timer = setInterval(loop,30);
 
 	function loop() {
         movefundo();
+        movejogador();
 
-	} // Fim da função loop()  
+
+	} // Fim da função loop()
+
 
 
     //Função que movimenta o fundo do jogo
-
 	function movefundo() {
         esquerda = parseInt($("#fundoGame").css("background-position"));
 	    $("#fundoGame").css("background-position",esquerda-1);
@@ -47,3 +50,26 @@ function start() { // início da função start
 	} // fim da função movefundo()
 
 } // fim da função start
+
+
+
+    function movejogador() {
+    
+    if (jogo.pressionou[TECLA.W]) {
+        var topo = parseInt($("#jogador").css("top"));
+        $("#jogador").css("top",topo-10);
+    
+    }
+    
+    if (jogo.pressionou[TECLA.S]) {
+        
+        var topo = parseInt($("#jogador").css("top"));
+        $("#jogador").css("top",topo+10);   
+    }
+    
+    if (jogo.pressionou[TECLA.D]) {
+        
+        //Chama função Disparo  
+    }
+
+    } // fim da função movejogador()
