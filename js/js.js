@@ -18,6 +18,16 @@ function start() { // início da função start
 
     jogo.pressionou = [];
 
+    //Verifica se o usuário pressionou alguma tecla
+    $(document).keydown(function(e){
+    jogo.pressionou[e.which] = true; // para quando o usuário pressiona uma tecla for true
+    });
+
+
+    $(document).keyup(function(e){
+    jogo.pressionou[e.which] = false; // para quando o usuário pressiona uma tecla for false
+    });
+
 
 	//Loop do jogo
 	jogo.timer = setInterval(loop,30);
