@@ -262,6 +262,7 @@ function energia() {
             //Game Over
 
         }
+        gameOver();
     
     } // Fim da função energia()
 
