@@ -13,6 +13,7 @@ function start() { // início da função start
 
     var velocidade=5;
     var posicaoY = parseInt(Math.random() * 334);
+    var energiaAtual=3;
 
     // definindo as teclas do jogo
     var TECLA = {
