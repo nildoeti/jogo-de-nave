@@ -46,6 +46,7 @@ function start() { // início da função start
         moveinimigo2();
         moveamigo();
         colisao();
+        energia();
 
 	} // Fim da função loop()
 
