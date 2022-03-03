@@ -1,12 +1,12 @@
 @font-face {
-    font-family: face;
+    font-family: Titulo;
     src: url(../fontes/ANODETONOONE.TTF);
 }
 
 h1 {
-    color: #603A03;
-    font-family: face;
+    font-family: Titulo;
     font-size: 40px;
+    color: #603A03;
 }
 
 body {
@@ -14,117 +14,131 @@ body {
 }
 
 #container {
-    height: auto;
-    margin-left: auto;
-    margin-right: auto;
-    position: relative;
     width: 950px;
-}
-
-#inicio {
-    background-color: #fff;
-    height: 200px;
+    height: auto;
+    position: relative;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 100px;
-    padding: 10px;
-    text-align: center;
-    width: 350px;
 }
 
 #fundoGame {
-    background-image: url(../imgs/fundo_game.jpg);
-    border-color: #fff;
-    border-style: solid;
-    height: 630px;
     width: 950px;
-
+    height: 630px;
+    background-image: url(../imgs/fundo_game.jpg);
+    border-color: #FFF;
+    border-style: solid;
+    margin-top: 50px;
 }
 
 #jogador {
-    background-image: url(../imgs/apache.png);
-    height: 66px;
-    left: 8px;
-    position: absolute;
-    top: 179px;
     width: 256px;
-}
-
-#amigo {
-    background-image: url(../imgs/amigo.png);
-    height: 51px;
-    left: 10px;
+    height: 66px;
     position: absolute;
-    top: 464px;
-    width: 44px;
+    left: 8px;
+    top: 179px;
+    background-image: url(../imgs/apache.png);
 }
 
 #inimigo1 {
-    background-image: url(../imgs/inimigo1.png);
-    height: 66px;
-    left: 689px;
-    position: absolute;
-    top: 253px;
     width: 256px;
+    height: 66px;
+    position: absolute;
+    left: 689px;
+    top: 253px;
+    background-image: url(../imgs/inimigo1.png);
 }
 
 #inimigo2 {
-    background-image: url(../imgs/inimigo2.png);
-    height: 70px;
-    left: 775px;
-    position: absolute;
-    top: 447px;
     width: 165px;
+    height: 70px;
+    position: absolute;
+    left: 775px;
+    top: 447px;
+    background-image: url(../imgs/inimigo2.png);
 }
 
-/* Animação */
+#amigo {
+    width: 44px;
+    height: 51px;
+    position: absolute;
+    left: 10px;
+    top: 464px;
+    background-image: url(../imgs/amigo.png);
+}
+
+#inicio {
+    width: 350px;
+    height: 200px;
+    background-color: #FFF;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    text-align: center;
+    padding: 10px;
+}
+
 .anima1 {
-  background-image: url(../imgs/apache.jpg);
-  animation: play .5s steps(2) infinite;
-
-  /* resolvendo incompatibilidade com os browers */
-  -webkit-animation: play .5s steps(2) infinite;
-  -moz-animation: play .5s steps(2) infinite;
-  -ms-zoom-animation: play .5s steps(2) infinite;
-  -o-animation: play .5s steps(2) infinite;
-
+    background-image: url(../imgs/helicoptero.png);
+    animation: play .5s steps(2) infinite;
+    -webkit-animation: play .5s steps(2) infinite;
+    -moz-animation: play .5s steps(2) infinite;
+    -ms-animation: play .5s steps(2) infinite;
+    -o-animation: play .5s steps(2) infinite;
 }
 
 @keyframes play {
-    from {background-position: 0px;}
-    to {background-position: 512px;}
+    from {
+        background-position: 0px;
+    }
+
+    to {
+        background-position: -512px;
+    }
 }
 
 @-webkit-keyframes play {
-    from {background-position: 0px;}
-    to {background-position: -512px;}
+    from {
+        background-position: 0px;
+    }
+
+    to {
+        background-position: -512px;
+    }
 }
 
 @-moz-keyframes play {
-    from {background-position: 0px;}
-    to {background-position: -512px;}
-}
+    from {
+        background-position: 0px;
+    }
 
-@-moz-keyframes play {
-    from {background-image: 0px;}
-    to {background-image: -512px;}
+    to {
+        background-position: -512px;
+    }
 }
 
 @-ms-keyframes play {
-    from {background-image: 0px;}
-    to {background-image: -512px;}
+    from {
+        background-position: 0px;
+    }
+
+    to {
+        background-position: -512px;
+    }
 }
 
 @-o-keyframes play {
-    from {background-image: 0px;}
-    to {background-image: -512px;}
+    from {
+        background-position: 0px;
+    }
+
+    to {
+        background-position: -512px;
+    }
 }
 
 .anima2 {
     background-image: url(../imgs/inimigo1.png);
     animation: play .5s steps(2) infinite;
-    
-    /* resolvendo incompatibilidade com os browers */
     -webkit-animation: play .5s steps(2) infinite;
     -moz-animation: play .5s steps(2) infinite;
     -ms-animation: play .5s steps(2) infinite;
@@ -133,40 +147,62 @@ body {
 
 .anima3 {
     background-image: url(../imgs/amigo.png);
-    animation: play2 .9s steps(12) infinite; 
-
-    /* resolvendo incompatibilidade com os browers */
-    -webkit-animation: play2 .9s steps(2) infinite;
-    -moz-animation: play2 .9s steps(2) infinite;
-    -ms-animation: play2 .9s steps(2) infinite;
-    -o-animation: play2 .9s steps(2) infinite;
+    animation: play2 .9s steps(12) infinite;
+    -webkit-animation: play2 .9s steps(12) infinite;
+    -moz-animation: play2 .9s steps(12) infinite;
+    -ms-animation: play2 .9s steps(12) infinite;
+    -o-animation: play2 .9s steps(12) infinite;
 }
 
- @keyframes play2{
-     from {background-position: 0px;}
-     to {background-position: -512px;}
- }
+@keyframes play2 {
+    from {
+        background-position: 0px;
+    }
+
+    to {
+        background-position: -528px;
+    }
+}
 
 @-webkit-keyframes play2 {
-    from {background-position: 0px;}
-    to {background-position: -512px;}
+    from {
+        background-position: 0px;
+    }
+
+    to {
+        background-position: -528px;
+    }
 }
 
 @-moz-keyframes play2 {
-    from {background-position: 0px;}
-    to {background-position: -512px;}
+    from {
+        background-position: 0px;
+    }
+
+    to {
+        background-position: -528px;
+    }
 }
 
 @-ms-keyframes play2 {
-    from {background-position: 0px;}
-    to {background-position: -512px;}
+    from {
+        background-position: 0px;
+    }
+
+    to {
+        background-position: -528px;
+    }
 }
 
 @-o-keyframes play2 {
-    from {background-position: 0px;}
-    to {background-position: -512px;}
-}
+    from {
+        background-position: 0px;
+    }
 
+    to {
+        background-position: -528px;
+    }
+}
 
 #disparo {
     width: 50px;
@@ -175,49 +211,120 @@ body {
     background-image: url(../imgs/disparo.png);
 }
 
-
 #explosao1 {
-    width:15px;
-    height:87px;
-    position:absolute;
-
+    width: 15px;
+    height: 87px;
+    position: absolute;
 }
 
 #explosao2 {
-    width:15px;
-    height:87px;
-    position:absolute;
-    
+    width: 15px;
+    height: 87px;
+    position: absolute;
 }
 
+#explosao3 {
+    width: 44px;
+    height: 51px;
+    position: absolute;
+}
 
+.anima4 {
+    width: 44px;
+    height: 51px;
+    background-image: url(../imgs/amigo_morte.png);
+    animation: play3 .5s steps(7) infinite;
+    -webkit-animation: play3 .5s steps(7) infinite;
+    -moz-animation: play3 .5s steps(7) infinite;
+    -ms-animation: play3 .5s steps(7) infinite;
+    -o-animation: play3 .5s steps(7) infinite;
+}
+
+@keyframes play3 {
+    from {
+        background-position: 0px;
+    }
+
+    to {
+        background-position: -308px;
+    }
+}
+
+@-webkit-keyframes play3 {
+    from {
+        background-position: 0px;
+    }
+
+    to {
+        background-position: -308px;
+    }
+}
+
+@-moz-keyframes play3 {
+    from {
+        background-position: 0px;
+    }
+
+    to {
+        background-position: -308px;
+    }
+}
+
+@-ms-keyframes play3 {
+    from {
+        background-position: 0px;
+    }
+
+    to {
+        background-position: -308px;
+    }
+}
+
+@-o-keyframes play3 {
+    from {
+        background-position: 0px;
+    }
+
+    to {
+        background-position: -308px;
+    }
+}
+
+#placar {
+    width: 450px;
+    height: 50px;
+    position: absolute;
+    left: 5px;
+    top: 590px;
+}
+
+h2 {
+    font-family: Titulo;
+    font-size: 20px;
+    color: #FFF
+}
 
 #energia {
     width: 140px;
     height: 38px;
     position: absolute;
     left: 750px;
-    top: 7px;   
+    top: 7px;
 }
 
-
-* estilos.css *****
-
 h3 {
-    font-family:Titulo;
-    font-size:20px;
-    color:#603A03;
-
+    font-family: Titulo;
+    font-size: 20px;
+    color: #603A03;
 }
 
 #fim {
-    width:350px;
-    height:200px;
-    background-color:#FFF;
-    margin-left:auto;
-    margin-right:auto;
-    margin-top:100px;
-    text-align:center;
-    padding:10px;
-
+    width: 350px;
+    height: 200px;
+    background-color: #FFF;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    text-align: center;
+    padding: 10px;
 }
