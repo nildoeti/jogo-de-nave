@@ -112,7 +112,8 @@ function moveinimigo1() {
         }
 } //Fim da função moveinimigo1()
 
-
+// jogador com o inimigo2
+energiaAtual--;
 
 
 function moveinimigo2() {
@@ -181,7 +182,7 @@ var colisao1 = ($("#jogador").collision($("#inimigo1")));
 // jogador com o inimigo1
     
     if (colisao1.length>0) {
-        
+    energiaAtual--;
     inimigo1X = parseInt($("#inimigo1").css("left"));
     inimigo1Y = parseInt($("#inimigo1").css("top"));
     explosao1(inimigo1X,inimigo1Y);
@@ -189,6 +190,7 @@ var colisao1 = ($("#jogador").collision($("#inimigo1")));
     posicaoY = parseInt(Math.random() * 334);
     $("#inimigo1").css("left",694);
     $("#inimigo1").css("top",posicaoY);
+
     }
 
 } //Fim da função colisao()
