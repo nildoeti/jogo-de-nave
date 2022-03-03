@@ -260,7 +260,13 @@ function energia() {
             $("#energia").css("background-image", "url(imgs/energia0.png)");
             
             //Game Over
-             js.js *****
+
+        }
+    
+    } // Fim da função energia()
+
+
+     js.js *****
 
 //Função GAME OVER
     function gameOver() {
@@ -281,7 +287,3 @@ function energia() {
     $("#fim").html("<h1> Game Over </h1><p>Sua pontuação foi: " + pontos + "</p>" + "<div id='reinicia' onClick=reiniciaJogo()><h3>Jogar Novamente</h3></div>");
     } // Fim da função gameOver();
 
-
-        }
-    
-    } // Fim da função energia()
