@@ -48,6 +48,15 @@ function start() { // início da função start
     });
 
 
+    //Reinicia o Jogo
+            
+    function reiniciaJogo() {
+        somGameover.pause();
+        $("#fim").remove();
+        start();
+        
+    } //Fim da função reiniciaJogo
+
 
 	//Loop do jogo
 	jogo.timer = setInterval(loop,30);
