@@ -87,7 +87,7 @@ body {
   -moz-animation: play .5s steps(2) infinite;
   -ms-zoom-animation: play .5s steps(2) infinite;
   -o-animation: play .5s steps(2) infinite;
-  
+
 }
 
 @keyframes play {
@@ -165,4 +165,12 @@ body {
 @-o-keyframes play2 {
     from {background-position: 0px;}
     to {background-position: -512px;}
+}
+
+
+#disparo {
+    width: 50px;
+    height: 8px;
+    position: absolute;
+    background-image: url(../imgs/disparo.png);
 }
