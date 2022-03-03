@@ -206,6 +206,7 @@ var colisao1 = ($("#jogador").collision($("#inimigo1")));
     posicaoY = parseInt(Math.random() * 334);
     $("#inimigo1").css("left",694);
     $("#inimigo1").css("top",posicaoY);
+    somResgate.play();
 
     }   
     velocidade=velocidade+0.3;
