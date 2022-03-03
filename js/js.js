@@ -106,6 +106,7 @@ function start() { // início da função start
         
         //Chama função Disparo  
         disparo();
+        somDisparo.play();
     }
 
     } // fim da função movejogador()
