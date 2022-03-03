@@ -180,6 +180,7 @@ function disparo() {
 
 function colisao() {
 var colisao1 = ($("#jogador").collision($("#inimigo1")));
+
 // jogador com o inimigo1
     
     if (colisao1.length>0) {
@@ -193,6 +194,7 @@ var colisao1 = ($("#jogador").collision($("#inimigo1")));
     $("#inimigo1").css("top",posicaoY);
 
     }
+    velocidade=velocidade+0.3;
 
 } //Fim da função colisao()
 
@@ -218,7 +220,7 @@ function explosao1(inimigo1X,inimigo1Y) {
         
     } // Fim da função explosao1()
 
-    
+
 //Barra de energia
 
 function energia() {
