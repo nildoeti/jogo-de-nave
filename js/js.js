@@ -15,7 +15,7 @@ function start() { // início da função start
     var posicaoY = parseInt(Math.random() * 334);
     var energiaAtual=3;
 
-    
+
     var somDisparo=document.getElementById("somDisparo");
     var somExplosao=document.getElementById("somExplosao");
     var musica=document.getElementById("musica");
@@ -23,6 +23,10 @@ function start() { // início da função start
     var somPerdido=document.getElementById("somPerdido");
     var somResgate=document.getElementById("somResgate");
 
+
+    //Música em loop
+    musica.addEventListener("ended", function(){ musica.currentTime = 0; musica.play(); }, false);
+    musica.play();
 
     // definindo as teclas do jogo
     var TECLA = {
