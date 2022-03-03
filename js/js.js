@@ -15,6 +15,15 @@ function start() { // início da função start
     var posicaoY = parseInt(Math.random() * 334);
     var energiaAtual=3;
 
+    
+    var somDisparo=document.getElementById("somDisparo");
+    var somExplosao=document.getElementById("somExplosao");
+    var musica=document.getElementById("musica");
+    var somGameover=document.getElementById("somGameover");
+    var somPerdido=document.getElementById("somPerdido");
+    var somResgate=document.getElementById("somResgate");
+
+
     // definindo as teclas do jogo
     var TECLA = {
         W: 87,
@@ -193,7 +202,7 @@ var colisao1 = ($("#jogador").collision($("#inimigo1")));
     $("#inimigo1").css("left",694);
     $("#inimigo1").css("top",posicaoY);
 
-    }
+    }   
     velocidade=velocidade+0.3;
 
 } //Fim da função colisao()
