@@ -43,6 +43,7 @@ function start() { // início da função start
         moveinimigo1();
         moveinimigo2();
         moveamigo();
+        colisao();
 
 	} // Fim da função loop()
 
